@@ -1,6 +1,6 @@
 .PHONY: examples
 
-CC = 'docker run --rm --user $(id -u):$(id -g) -i -w "/doc" -v "$PWD":/doc thomasweise/texlive make'
+CC = xelatex
 OUTPUT_DIR = output
 SRC_DIR = src
 RESUME_DIR = src/resume
